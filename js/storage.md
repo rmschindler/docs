@@ -68,7 +68,7 @@ Amplify.configure({
 
 ```
 
-If you setup your Cognito resources manually, the roles will need to be given permission to access the S3 bucket.
+If you set up your Cognito resources manually, the roles will need to be given permission to access the S3 bucket.
 
 There are two roles created by Cognito an `Auth_Role` that creates signed-in user-level bucket access and `Unauth_role` that allows unauthenticated access to resources. Attach the corresponding policies to each role for proper S3 access. Replace ```{enter bucket name}``` with the correct S3 bucket.
 
@@ -194,9 +194,9 @@ Inline policy for `Unauth_Role`:
 
 The policy template that Amplify CLI uses is found [here](https://github.com/aws-amplify/amplify-cli/blob/b12d20b9d85f7fc6abf7e2f7fbe11e1a108911b9/packages/amplify-category-storage/provider-utils/awscloudformation/cloudformation-templates/s3-cloudformation-template.json).
 
-### Setup Amazon S3 Bucket CORS Policy
+### Set up Amazon S3 Bucket CORS Policy
 
-To make calls to your S3 bucket from your App, you need to setup CORS Policy for your S3 bucket.
+To make calls to your S3 bucket from your App, you need to set up a CORS Policy for your S3 bucket.
 {: .callout .callout--warning}
 
 Following steps will enable your CORS Policy: 
