@@ -201,7 +201,7 @@ The setup has three parts, we will use an example to demonstrate this capability
 
 Assume Biz Corp has decided to hire Dev Corp to develop its inventory management web portal, and the Dev Corp is using the Amplify CLI to speed up the development process. <br/>
 
-#### Part #1: Setup the role (Biz Corp)
+#### Part #1: Set up the role (Biz Corp)
 1. Sign in to the AWS Management Console and open the [IAM](https://console.aws.amazon.com/iam/) console.
 2. In the navigation pane of the console, choose `Roles` and then choose `Create role`.
 3. Choose the `Another AWS account` role type.
@@ -228,7 +228,7 @@ Note:You MUST grant the role permissions to perform Cloudformation actions and c
 11. Choose `Create role`.
 12. Give the Role Arn to Dev Corp.
 
-#### Part #2: Setup the user to assume the role (Dev Corp)
+#### Part #2: Set up the user to assume the role (Dev Corp)
 ##### 2.1 Create policy that has permission to assume the role created above by Biz corp. 
 1. Get the Role Arn from Biz Corp.
 2. Sign in to the AWS Management Console and open the [IAM](https://console.aws.amazon.com/iam/) console. (Assuming Dev corp has a separate AWS account).
